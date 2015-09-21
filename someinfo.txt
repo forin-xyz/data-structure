@@ -1,0 +1,10 @@
+动态链接库和静态链接库么？
+静态链接库就是你的程序编译的时候，会把这些库一起链接进去，会增加最后生成的可执行文件的大小，以后不需要外部提供这个库，就可以执行
+动态链接库就是不链接进去，执行的时候，需要提供动态链接库给它调用
+ar crv libtest.a *.o
+
+ar crv libtest.a *.o
+
+gcc LkList.c main.c -o main
+gcc a.o b.o c.o -o all.o
+gcc a.o b.o main.c -o a.out
